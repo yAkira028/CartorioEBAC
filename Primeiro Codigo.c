@@ -11,6 +11,8 @@ int registro(){
 	char nome[40];
 	char sobrenome[40];
 	char cargo[40];
+	int opcao=0;
+	int laco=1;
 	//final da criação de variaveis
 	
 	printf("Digite o CPF a ser cadastrado: ");
@@ -57,7 +59,25 @@ int registro(){
 	fclose(file);
 	
 	printf("Você foi cadastrado com sucesso!\n\n");
-	system("pause");
+	
+	printf("Caso deseje cadastrar mais usúarios digite 1, caso queira sair do sistema digite 2.");
+	
+	scanf("%d", &opcao);
+	
+	system("cls");
+	
+	switch(opcao){
+		case 1:
+			registro(); //abre novamente a função de registro
+			break;
+		case 2:
+			system("pause"); // fecha o sistema
+			break;
+		default:
+			printf("Essa opção não está disponivel!\n");
+			system("pause");
+			break;	
+	}
 }
 
 int consultar(){
