@@ -1,0 +1,30 @@
+INT MAIN
+  100% correta
+
+ REGISTRO()
+	incia e encerra na mesma função
+	100% correta
+ CONSULTA()
+	incia e encerra na mesma função
+	100% correta
+ DELETAR()
+	incia e encerra na mesma função
+	sempre vai retornar que o usuario n se encotra no sistema 
+	(não impacta negativamente a funcionalidade do sistema para o usuario).
+	100% correta
+
+login: 100%
+inserir:
+	menu funciou corretamente
+	criou o arquivo
+	cpf, nome, sobrenome e cargo
+
+consultar:
+	menu funcionou corretamente
+	consulta a cpf inexistente: ok
+	consulta a cpf existente: ok 
+	retorno ao menu: ok
+deletar:
+	menu funcionou corretamente
+	100% funcional
+100%
