@@ -3,7 +3,7 @@
 #include <locale.h> //biblioteca de alocação de texto por região
 #include <string.h> //biblioteca responsavel por cuidar das strings
 
-int registro(){
+int registro(){ //funcao responsavel por registrar no sistema 
 	
 	//inicio da criação de variaveis
 	char arquivo[40];	
@@ -86,7 +86,7 @@ int consultar(){
 	char cpf[40];
 	char conteudo[200];
 	
-	printf("Digite o CPF a ser consultado: ");
+	printf("Digite o CPF a ser consultado: ");// recebendo o usuario a ser consultado
 	scanf("%s",cpf);
 	
 	FILE *file;
@@ -157,9 +157,9 @@ int main(){
 			
 			scanf("%d", &opcao); //armazenando a escolha do usuario
 			
-			system("cls");
+			system("cls"); //limpa a tela
 		
-			switch(opcao)
+			switch(opcao) //chama a função
 			{
 				case 1:
 				registro();//chamada de funções
